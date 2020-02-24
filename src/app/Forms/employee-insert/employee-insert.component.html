@@ -1,0 +1,25 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="Input1">Id</label>
+            <input type="number" class="form-control" id="Input1" placeholder="Name" name="firstName" [(ngModel)]="employee.employeeId">
+
+            <label for="Input1">First name</label>
+            <input type="name" class="form-control" id="Input1" placeholder="Name" name="firstName" [(ngModel)]="employee.firstName">
+
+            <label for="Input2">Last name</label>
+            <input type="name" class="form-control" id="Input2" placeholder="Last name" name="lastName" [(ngModel)]="employee.lastName">
+
+            <label for=" Input3 ">Email address</label>
+            <input type="email " class="form-control " id="Input3 " placeholder="name@example.com " name="email" [(ngModel)]="employee.email">
+
+            <label for="Input4">Salary</label>
+            <input type="text" class="form-control" id="Input4" placeholder="10000" name="salary" [(ngModel)]="employee.salary">
+
+            <label for=" Input5 ">Phone number</label>
+            <input type="number " class="form-control " id="Input5 " placeholder="555-555-555 " name="phoneNumber" [(ngModel)]="employee.phoneNumber">
+        </div>
+    </form>
+    <button type="button" class="btn btn-primary btn-lg d-inline" (click)="onInsert(employee)">Insert</button>
+    <a class="btn btn-primary btn-lg float-right" [routerLink]="['/']" role="button">Go back</a>
+</div>
